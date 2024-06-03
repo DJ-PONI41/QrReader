@@ -64,12 +64,11 @@ const activarSonido = () => {
 //callback cuando termina de leer el codigo QR
 qrcode.callback = (respuesta) => {
   if (respuesta) {
-    //console.log(respuesta);
-    Swal.fire(respuesta)
-    activarSonido();
-    //encenderCamara();    
-    cerrarCamara();    
+    // Redirige directamente al enlace del código QR
+    window.location.href = respuesta;
 
+    activarSonido();
+    cerrarCamara();    
   }
 };
 
