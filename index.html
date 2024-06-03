@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <script src="assets/plugins/qrCode.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="Container_camar">
+        
+        <div id="scan_container" class="scan hidden">
+        
+            <div class="qrcode">
+                <a id="btn-scan-qr" class="camara-container" href="#">
+                    
+                <a/>
+            </div>
+            
+            <div class="border"></div>
+        </div>
+        <div class="camara">
+            <canvas hidden="" id="qr-canvas" class="img-fluid"></canvas>
+        </div>
+        <div class="Container_botones">
+            <button class="btn" onclick="encenderCamara()">Encender camara</button>
+            <button class="btn apagar" onclick="cerrarCamara()">Detener camara</button>
+        </div>
+        
+    </div>
+    
+    <audio id="audioScaner" src="assets/sonido.mp3"></audio>
+    <script src="assets/js/index.js"></script>
+</body>
+</html>
